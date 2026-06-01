@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Update school topics."""
+"""Update topics of a school document."""
+
 
 def update_topics(mongo_collection, name, topics):
-"""Update topics of all schools matching name."""
-mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
+    """Change all topics of a school document based on name."""
+    mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
