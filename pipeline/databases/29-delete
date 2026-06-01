@@ -1,1 +1,2 @@
+// MONGODB SCRIPT
 db.school.deleteMany({ name: "Holberton school" })
