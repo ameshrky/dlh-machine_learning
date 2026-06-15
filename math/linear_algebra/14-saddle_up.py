@@ -3,7 +3,8 @@
 
 import numpy as np
 
-def np_cat(mat1, mat2, axis=0):
+
+def np_matmul(mat1, mat2):
     """Returns the element-wise addition of two arrays."""
 
-    return np.concatenate((mat1, mat2), axis=axis)
+    return np.matmul(mat1, mat2)
